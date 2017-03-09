@@ -1,7 +1,7 @@
 {
   "name": "fx-assistant-ui",
   "version": "1.0.0",
-  "description": "Showcase of Vue.js as frontend with (Java) Spring as backend",
+  "description": "Showcase of Vue.js as frontend using (Java) Spring as backend",
   "author": "visvadw <visvadw@gmail.com>",
   "private": true,
   "scripts": {
