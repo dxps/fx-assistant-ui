@@ -21,6 +21,10 @@ export default {
 
 <style>
 
+html {
+  font-family: 'Dosis',sans-serif;
+}
+
 #app {
   font-family: 'Dosis', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

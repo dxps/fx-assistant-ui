@@ -1,3 +1,75 @@
+/* Dosis (complete package) @font-face kit */
+/* Dosis @font-face kit */
+/* BEGIN Dosis Extra Light */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-extralight-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.svg#42f943d0f7ca6e66f4115349a902a055') format('svg');
+  font-weight: 200;
+  font-style: normal;
+}
+/* END Dosis Extra Light */
+/* BEGIN Dosis Light */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-light-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-light-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-light-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-light-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-light-webfont.svg#1aff088524c49cd5afcc744e5b53141a') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+/* END Dosis Light */
+/* BEGIN Dosis Regular */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-regular-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.svg#548baaf7a02d0b5cf20987eecbc3005e') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* END Dosis Regular */
+/* BEGIN Dosis Medium */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-medium-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.svg#2cbaa3672d557c9ba71c951362e5c97b') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+/* END Dosis Medium */
+/* BEGIN Dosis Semi Bold */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-semibold-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.svg#ea3d2069407c6221628e6100ecea896b') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+/* END Dosis Semi Bold */
+/* BEGIN Dosis Bold */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-bold-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.svg#ca77017c9ce4c854dee5d657c3771940') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* END Dosis Bold */
+/* BEGIN Dosis Extra Bold */
+@font-face {
+  font-family: 'Dosis';
+  src: url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.eot');
+  src: url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.svg#95f4a68d6bbb7d62890bcf445d9e753e') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* END Dosis Extra Bold */
+
+html {
+  font-family: 'Dosis', sans-serif;
+}
+
+
+
 .el-form-item__content:before, .el-form-item__content:after {
     display: table;
     content: "";
