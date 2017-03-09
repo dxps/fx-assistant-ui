@@ -4,7 +4,7 @@
  */
 
 html {
-  font-family: 'Dosis',sans-serif;
+  font-family: sans-serif;
   /* 1 */
   -ms-text-size-adjust: 100%;
   /* 2 */
@@ -564,7 +564,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 15px;
   color: rgb(31, 45, 61);
 }
 
@@ -595,15 +595,15 @@ h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:la
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 21px;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 17px;
 }
 
 h4, h5, h6, p {
@@ -623,11 +623,11 @@ p:last-child {
 }
 
 sup, sub {
-  font-size: 13px;
+  font-size: 14px;
 }
 
 small {
-  font-size: 12px;
+  font-size: 13px;
 }
 :root {
   /* Transition

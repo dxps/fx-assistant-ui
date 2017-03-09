@@ -1,75 +1,3 @@
-/* Dosis (complete package) @font-face kit */
-/* Dosis @font-face kit */
-/* BEGIN Dosis Extra Light */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-extralight-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-extralight-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-extralight-webfont.svg#42f943d0f7ca6e66f4115349a902a055') format('svg');
-  font-weight: 200;
-  font-style: normal;
-}
-/* END Dosis Extra Light */
-/* BEGIN Dosis Light */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-light-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-light-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-light-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-light-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-light-webfont.svg#1aff088524c49cd5afcc744e5b53141a') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-/* END Dosis Light */
-/* BEGIN Dosis Regular */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-regular-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-regular-webfont.svg#548baaf7a02d0b5cf20987eecbc3005e') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-/* END Dosis Regular */
-/* BEGIN Dosis Medium */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-medium-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-medium-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-medium-webfont.svg#2cbaa3672d557c9ba71c951362e5c97b') format('svg');
-  font-weight: 500;
-  font-style: normal;
-}
-/* END Dosis Medium */
-/* BEGIN Dosis Semi Bold */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-semibold-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-semibold-webfont.svg#ea3d2069407c6221628e6100ecea896b') format('svg');
-  font-weight: 600;
-  font-style: normal;
-}
-/* END Dosis Semi Bold */
-/* BEGIN Dosis Bold */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-bold-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-bold-webfont.svg#ca77017c9ce4c854dee5d657c3771940') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-/* END Dosis Bold */
-/* BEGIN Dosis Extra Bold */
-@font-face {
-  font-family: 'Dosis';
-  src: url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.eot');
-  src: url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.eot?#iefix') format('embedded-opentype'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.woff') format('woff'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.ttf') format('truetype'), url('../static/fonts/dosis/fonts/dosis-extrabold-webfont.svg#95f4a68d6bbb7d62890bcf445d9e753e') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-/* END Dosis Extra Bold */
-
-html {
-  font-family: 'Dosis', sans-serif;
-}
-
-
-
 .el-form-item__content:before, .el-form-item__content:after {
     display: table;
     content: "";
@@ -627,7 +555,7 @@ html {
     margin: 0;
     text-align: center;
     color: #999;
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-select-dropdown__wrap {
     max-height: 274px;
@@ -729,7 +657,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -914,7 +842,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -1209,7 +1137,7 @@ html {
 }
 .el-select-dropdown {}
 .el-select-dropdown__item {
-    font-size: 14px;
+    font-size: 15px;
     padding: 8px 10px;
     position: relative;
     white-space: nowrap;
@@ -1517,7 +1445,7 @@ html {
     transition: 0s;
     width: 16px;
     height: 16px;
-    font-size: 14px;
+    font-size: 15px;
     right: 8px;
     text-align: center;
     transform: translateY(-50%) rotateZ(180deg);
@@ -1555,7 +1483,7 @@ html {
     padding: 0;
     margin-left: 10px;
     color: #666;
-    font-size: 14px;
+    font-size: 15px;
     vertical-align: baseline;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -1591,7 +1519,7 @@ html {
     display: inline-block;
     height: 24px;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
     color: #fff;
     background-color: #20a0ff;
@@ -2154,7 +2082,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -2339,7 +2267,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -2709,7 +2637,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
 }
 .el-button + .el-button {
@@ -3082,7 +3010,7 @@ html {
     display: inline-block;
     position: relative;
     color: rgb(72, 87, 106);
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-dropdown .el-button-group {
     display: block;
@@ -3494,7 +3422,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -3679,7 +3607,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -3795,7 +3723,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -3980,7 +3908,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -4403,7 +4331,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 0;
 }
 .el-radio-button__inner:hover {
@@ -4757,7 +4685,7 @@ html {
 .el-switch {
     display: inline-block;
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 22px;
     height: 22px;
     vertical-align: middle;
@@ -4792,7 +4720,7 @@ html {
     left: 0;
     top: 0;
     display: inline-block;
-    font-size: 14px;
+    font-size: 15px;
     cursor: pointer;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -4803,7 +4731,7 @@ html {
     line-height: 1;
     top: 4px;
     position: absolute;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     color: #fff;
 }
@@ -5065,7 +4993,7 @@ html {
     margin: 0;
     text-align: center;
     color: #999;
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-select-dropdown__wrap {
     max-height: 274px;
@@ -5167,7 +5095,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -5352,7 +5280,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -5647,7 +5575,7 @@ html {
 }
 .el-select-dropdown {}
 .el-select-dropdown__item {
-    font-size: 14px;
+    font-size: 15px;
     padding: 8px 10px;
     position: relative;
     white-space: nowrap;
@@ -5955,7 +5883,7 @@ html {
     transition: 0s;
     width: 16px;
     height: 16px;
-    font-size: 14px;
+    font-size: 15px;
     right: 8px;
     text-align: center;
     transform: translateY(-50%) rotateZ(180deg);
@@ -5993,7 +5921,7 @@ html {
     padding: 0;
     margin-left: 10px;
     color: #666;
-    font-size: 14px;
+    font-size: 15px;
     vertical-align: baseline;
     -webkit-appearance: none;
        -moz-appearance: none;
@@ -6029,7 +5957,7 @@ html {
     display: inline-block;
     height: 24px;
     line-height: 24px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
     color: #fff;
     background-color: #20a0ff;
@@ -6143,7 +6071,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
 }
 .el-button + .el-button {
@@ -7834,7 +7762,7 @@ html {
     line-height: 36px;
     padding: 0 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-table-filter__list-item:hover {
     background-color: rgb(228, 232, 241);
@@ -7856,7 +7784,7 @@ html {
     border: none;
     color: rgb(131, 145, 165);
     cursor: pointer;
-    font-size: 14px;
+    font-size: 15px;
     padding: 0 3px;
 }
 .el-table-filter__bottom button:hover {
@@ -9531,7 +9459,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -9716,7 +9644,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -11360,7 +11288,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -11545,7 +11473,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -12321,7 +12249,7 @@ html {
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
 }
 .el-button + .el-button {
@@ -12781,7 +12709,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -12966,7 +12894,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -14374,7 +14302,7 @@ html {
     margin: 0;
 }
 .el-notification__content {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 21px;
     margin: 10px 0 0 0;
     color: rgb(131, 145, 165);
@@ -14394,7 +14322,7 @@ html {
     position: absolute;
     cursor: pointer;
     color: rgb(191, 203, 217);
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-notification__closeBtn:hover {
     color: rgb(151, 168, 190);
@@ -14499,7 +14427,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -14684,7 +14612,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -18532,7 +18460,7 @@ html {
     line-height: 20px;
 }
 .el-message__group p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 34px 0 0;
     white-space: nowrap;
     color: rgb(131, 145, 165);
@@ -18558,7 +18486,7 @@ html {
     position: absolute;
     cursor: pointer;
     color: rgb(191, 203, 217);
-    font-size: 14px;
+    font-size: 15px;
 }
 .el-message__closeBtn:hover {
     color: rgb(151, 168, 190);
@@ -18918,7 +18846,7 @@ html {
     overflow: hidden;
 }
 .el-rate__text {
-    font-size: 14px;
+    font-size: 15px;
     vertical-align: middle;
 }
 @charset "UTF-8";
@@ -19947,7 +19875,7 @@ html {
 }
 .el-input {
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%;
 }
@@ -20132,7 +20060,7 @@ html {
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
@@ -20325,7 +20253,7 @@ html {
     border-right: 0;
 }
 .el-cascader-menu__item {
-    font-size: 14px;
+    font-size: 15px;
     padding: 8px 30px 8px 10px;
     position: relative;
     white-space: nowrap;

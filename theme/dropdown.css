@@ -199,7 +199,7 @@
     -webkit-user-select: none;
     -ms-user-select: none;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
 }
 .el-button + .el-button{
@@ -573,7 +573,7 @@
     display: inline-block;
     position: relative;
     color: rgb(72, 87, 106);
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .el-dropdown .el-button-group{

@@ -62,13 +62,13 @@
 
   /* Font
   -------------------------- */
-  --font-size-base: 14px;
+  --font-size-base: 15px;
   --font-color-base: var(--color-base-black);
   --font-color-disabled-base: #bbb;
 
   /* Size
   -------------------------- */
-  --size-base: 14px;
+  --size-base: 15px;
 
   /* z-index
   -------------------------- */
@@ -324,7 +324,7 @@
 
   /* Button
   -------------------------- */
-  --button-font-size: 14px;
+  --button-font-size: 15px;
   --button-border-radius: var(--border-radius-base);
   --button-paddding: 5px 20px;
   --button-padding-vertical: 10px;

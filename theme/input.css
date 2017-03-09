@@ -90,7 +90,7 @@
 
 .el-input{
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     display: inline-block;
     width: 100%
 }
@@ -314,7 +314,7 @@
     line-height: 1.5;
     box-sizing: border-box;
     width: 100%;
-    font-size: 14px;
+    font-size: 15px;
     color: rgb(31, 45, 61);
     background-color: #fff;
     background-image: none;
