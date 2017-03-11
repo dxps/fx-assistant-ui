@@ -1,9 +1,23 @@
 <template>
 
   <div>
-    <div class="hello">
-      <h1>{{ msg }}</h1>
-    </div>
+
+    <el-row>
+      <el-col :span="24">
+        <div class="grid-content bg-purple-dark"><h1>{{ msg }}</h1></div>
+      </el-col>
+    </el-row>
+
+    <el-row>
+      <el-col :span="20" :offset="2">
+        <el-tabs v-model="activeName" @tab-click="handleClick">
+            <el-tab-pane label="User" name="first">User</el-tab-pane>
+            <el-tab-pane label="Config" name="second">Config</el-tab-pane>
+            <el-tab-pane label="Role" name="third">Role</el-tab-pane>
+            <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
+        </el-tabs>
+      </el-col>
+    </el-row>
 
     <el-button type="primary">Primary Button</el-button>
   </div>
@@ -15,24 +29,38 @@
 <script>
 
 import Vue from 'vue'
-import { Button, Select } from 'element-ui'
+import { Row, Col, Tabs, TabPane, Button, Select } from 'element-ui'
 import lang from 'element-ui/lib/locale/lang/en'
 import locale from 'element-ui/lib/locale'
 
-import '../../theme/index.css'
-
 locale.use(lang)
 
+Vue.component(Row.name, Row)
+Vue.component(Col.name, Col)
+Vue.component(Tabs.name, Tabs)
+Vue.component(TabPane.name, TabPane)
 Vue.component(Button.name, Button)
 Vue.component(Select.name, Select)
 
 export default {
+
   name: 'hello',
+
   data () {
     return {
-      msg: 'FX Assistant'
+      msg: 'FX Assistant',
+      activeName: 'first'
     }
+  },
+
+  methods: {
+
+        handleClick(tab, event) {
+          console.log(tab, event);
+        }
+
   }
+
 }
 
 </script>
