@@ -1,3 +1,4 @@
+
 <template>
 
   <div>
@@ -5,31 +6,91 @@
     <el-row>
       <el-col :span="24">
         <div class="grid-content bg-purple-dark"><h1>{{ msg }}</h1></div>
+        <el-button-group>
+          <el-button
+              :type="getSectionButtonType('exchange')"
+              icon="menu" @click="handleActiveSection('exchange')">&nbsp; exchange</el-button>
+          <el-button
+              :type="getSectionButtonType('about')"
+              icon="information" @click="handleActiveSection('about')">&nbsp; about</el-button>
+        </el-button-group>
       </el-col>
     </el-row>
 
     <el-row>
-      <el-col :span="20" :offset="2">
-        <el-tabs v-model="activeName" @tab-click="handleClick">
-            <el-tab-pane label="User" name="first">User</el-tab-pane>
-            <el-tab-pane label="Config" name="second">Config</el-tab-pane>
-            <el-tab-pane label="Role" name="third">Role</el-tab-pane>
-            <el-tab-pane label="Task" name="fourth">Task</el-tab-pane>
-        </el-tabs>
+      <el-col> &nbsp;
       </el-col>
     </el-row>
 
-    <el-button type="primary">Primary Button</el-button>
+    <el-row>
+      <el-col> &nbsp;
+      </el-col>
+    </el-row>
+
+    <el-row type="flex" justify="center">
+      <el-col :span="5">
+        <el-select
+           v-model="currency1_label" placeholder="Select Currency"
+           @change="handleChangeCurrency1Label(currency1_label)">
+          <el-option
+            v-for="currency in currencies"
+              :label="currency.label"
+              :value="currency.value"
+              :key="'c1_' + currency.value"
+              class="no_inline">
+              <span style="float: left">{{ currency.value }}</span>
+              <span style="float: right; color: #8492a6; font-size: 13px">{{ currency.desc }}</span>
+          </el-option>
+        </el-select>
+      </el-col>
+      <el-col :span="5">
+        <el-input-number
+            v-model="currency1_value" :min="1" :max="10000"
+            @change="handleChangeCurrency1Value"></el-input-number>
+      </el-col>
+    </el-row>
+
+    <el-row>
+      <el-col>
+          <img src="/static/images/updown-2-light-silver.png" class="updown">
+      </el-col>
+    </el-row>
+
+    <el-row type="flex" justify="center">
+      <el-col :span="5">
+        <el-select
+           v-model="currency2_label" placeholder="Select Currency"
+           @change="handleChangeCurrency2Label(currency2_label)">
+          <el-option
+            v-for="currency in currencies"
+              :label="currency.label"
+              :value="currency.value"
+              :key="'c2_' + currency.value"
+              class="no_inline">
+              <span style="float: left">{{ currency.value }}</span>
+              <span style="float: right; color: #8492a6; font-size: 13px">{{ currency.desc }}</span>
+          </el-option>
+        </el-select>
+      </el-col>
+      <el-col :span="5">
+        <el-input-number
+            v-model="currency2_value" :min="0" :max="10000"
+            @change="handleChangeCurrency2Value"></el-input-number>
+      </el-col>
+    </el-row>
+
+
+
   </div>
 
 </template>
 
-
+// ____________________________________________________________________________
 
 <script>
 
 import Vue from 'vue'
-import { Row, Col, Tabs, TabPane, Button, Select } from 'element-ui'
+import { Row, Col, ButtonGroup, Button, InputNumber, Select, Option } from 'element-ui'
 import lang from 'element-ui/lib/locale/lang/en'
 import locale from 'element-ui/lib/locale'
 
@@ -37,26 +98,63 @@ locale.use(lang)
 
 Vue.component(Row.name, Row)
 Vue.component(Col.name, Col)
-Vue.component(Tabs.name, Tabs)
-Vue.component(TabPane.name, TabPane)
+Vue.component(ButtonGroup.name, ButtonGroup)
 Vue.component(Button.name, Button)
+Vue.component(InputNumber.name, InputNumber)
 Vue.component(Select.name, Select)
+Vue.component(Option.name, Option)
 
 export default {
 
-  name: 'hello',
+  name: 'FxAssistantMain',
 
   data () {
+
+    let currencies = [
+      { value: 'EUR', desc: 'Euro' },
+      { value: 'USD', desc: 'US Dollar' },
+      { value: 'RON', desc: 'Romanian Leu' }
+    ];
+
     return {
       msg: 'FX Assistant',
-      activeName: 'first'
+      activeSection: 'exchange',
+      currencies: currencies,
+      currency1_label: '',
+      currency1_value: '',
+      currency2_label: '',
+      currency2_value: ''
     }
+
   },
 
   methods: {
 
-        handleClick(tab, event) {
-          console.log(tab, event);
+        getSectionButtonType(label) {
+          return (this.activeSection === label) ? 'primary' : 'default';
+        },
+
+        handleActiveSection(section) {
+           this.activeSection = section;
+        },
+
+        handleChangeCurrency1Label(value) {
+           console.log("handleChangeCurrency1Label > value =", value);
+        },
+
+        handleChangeCurrency1Value(value) {
+           this.currency1_value = value;
+           console.log("handleChangeCurrency1Value > value =", value ,
+                       "with currency1_value =", this.currency1_label);
+        },
+
+        handleChangeCurrency2Label(value) {
+           console.log("handleChangeCurrency2Label > value =", value);
+        },
+
+        handleChangeCurrency2Value(value) {
+           console.log("handleChangeCurrency2Value > value =", value,
+                       "with currency2 =", this.currency2);
         }
 
   }
@@ -65,7 +163,7 @@ export default {
 
 </script>
 
-
+// ____________________________________________________________________________
 
 <style scoped>
 
@@ -85,6 +183,15 @@ li {
 
 a {
   color: #42b983;
+}
+
+.no_inline {
+  display: block;
+}
+
+.updown {
+   width: 30px;
+   height: 30px;
 }
 
 </style>

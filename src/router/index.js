@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Hello from '@/components/FxAssistantMain'
+import FxAssistantMain from '@/components/FxAssistantMain'
 
 Vue.use(Router);
 
@@ -13,9 +13,9 @@ export default new Router({
     {
       path: '/',
       name: 'FxAssistantMain',
-      component: Hello
-    }
-    
+      component: FxAssistantMain
+    },
+  
   ]
   
 })
