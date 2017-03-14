@@ -9,27 +9,23 @@
         <el-button-group>
           <el-button
               :type="getSectionButtonType('exchange')"
-              icon="menu" @click="handleActiveSection('exchange')">&nbsp; exchange</el-button>
+              class="stdfont"
+              icon="menu" @click="handleActiveSection('exchange')">&nbsp; EXCHANGE</el-button>
           <el-button
               :type="getSectionButtonType('about')"
-              icon="information" @click="handleActiveSection('about')">&nbsp; about</el-button>
+              class="stdfont"
+              icon="information" @click="handleActiveSection('about')">&nbsp; ABOUT</el-button>
         </el-button-group>
+        <br/><br/><br/>
       </el-col>
     </el-row>
 
-    <el-row>
-      <el-col> &nbsp;
-      </el-col>
-    </el-row>
+    <!-- CURRENCY 1 -->
 
-    <el-row>
-      <el-col> &nbsp;
-      </el-col>
-    </el-row>
-
-    <el-row type="flex" justify="center">
-      <el-col :span="5">
+    <el-row type="flex" justify="center" :gutter="10">
+      <el-col :span="6">
         <el-select
+           size="large" filterable
            v-model="currency1_label" placeholder="Select Currency"
            @change="handleChangeCurrency1Label(currency1_label)">
           <el-option
@@ -43,10 +39,12 @@
           </el-option>
         </el-select>
       </el-col>
-      <el-col :span="5">
-        <el-input-number
-            v-model="currency1_value" :min="1" :max="10000"
-            @change="handleChangeCurrency1Value"></el-input-number>
+      <el-col :span="6">
+         <el-input-number
+            v-model="currency1_value" :min="0" :max="10000" size="large"
+            @change="handleChangeCurrency1Value"
+            :disabled="isCurrency1ValueReadOnly">
+         </el-input-number>
       </el-col>
     </el-row>
 
@@ -56,9 +54,12 @@
       </el-col>
     </el-row>
 
-    <el-row type="flex" justify="center">
+    <!-- CURRENCY 2 -->
+
+    <el-row type="flex" justify="center" :gutter="10">
       <el-col :span="5">
         <el-select
+           size="large"
            v-model="currency2_label" placeholder="Select Currency"
            @change="handleChangeCurrency2Label(currency2_label)">
           <el-option
@@ -73,13 +74,13 @@
         </el-select>
       </el-col>
       <el-col :span="5">
-        <el-input-number
-            v-model="currency2_value" :min="0" :max="10000"
-            @change="handleChangeCurrency2Value"></el-input-number>
+         <el-input-number
+            v-model="currency2_value" :min="0" :max="10000" size="large"
+            @change="handleChangeCurrency2Value"
+            :disabled="isCurrency2ValueReadOnly">
+         </el-input-number>
       </el-col>
     </el-row>
-
-
 
   </div>
 
@@ -145,7 +146,7 @@ export default {
         handleChangeCurrency1Value(value) {
            this.currency1_value = value;
            console.log("handleChangeCurrency1Value > value =", value ,
-                       "with currency1_value =", this.currency1_label);
+                       "with currency1_label =", this.currency1_label);
         },
 
         handleChangeCurrency2Label(value) {
@@ -154,8 +155,20 @@ export default {
 
         handleChangeCurrency2Value(value) {
            console.log("handleChangeCurrency2Value > value =", value,
-                       "with currency2 =", this.currency2);
+                       "with currency2_label =", this.currency2_label);
         }
+
+  },
+
+  computed: {
+
+     isCurrency1ValueReadOnly() {
+        return ('' === this.currency1_label);
+     },
+
+     isCurrency2ValueReadOnly() {
+        return ('' === this.currency2_label);
+     },
 
   }
 
@@ -192,6 +205,10 @@ a {
 .updown {
    width: 30px;
    height: 30px;
+}
+
+.stdfont {
+   font-family: 'Dosis', sans-serif;
 }
 
 </style>
