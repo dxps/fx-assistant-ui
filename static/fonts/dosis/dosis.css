@@ -1,5 +1,6 @@
 /* Dosis (complete package) @font-face kit */
 /* Dosis @font-face kit */
+
 /* BEGIN Dosis Extra Light */
 @font-face {
   font-family: 'Dosis';
@@ -9,6 +10,7 @@
   font-style: normal;
 }
 /* END Dosis Extra Light */
+
 /* BEGIN Dosis Light */
 @font-face {
   font-family: 'Dosis';
@@ -18,6 +20,7 @@
   font-style: normal;
 }
 /* END Dosis Light */
+
 /* BEGIN Dosis Regular */
 @font-face {
   font-family: 'Dosis';
@@ -27,6 +30,7 @@
   font-style: normal;
 }
 /* END Dosis Regular */
+
 /* BEGIN Dosis Medium */
 @font-face {
   font-family: 'Dosis';
@@ -36,6 +40,7 @@
   font-style: normal;
 }
 /* END Dosis Medium */
+
 /* BEGIN Dosis Semi Bold */
 @font-face {
   font-family: 'Dosis';
@@ -45,6 +50,7 @@
   font-style: normal;
 }
 /* END Dosis Semi Bold */
+
 /* BEGIN Dosis Bold */
 @font-face {
   font-family: 'Dosis';
@@ -54,6 +60,7 @@
   font-style: normal;
 }
 /* END Dosis Bold */
+
 /* BEGIN Dosis Extra Bold */
 @font-face {
   font-family: 'Dosis';
@@ -63,4 +70,5 @@
   font-style: normal;
 }
 /* END Dosis Extra Bold */
+
 /*# sourceMappingURL=dosis.map */
