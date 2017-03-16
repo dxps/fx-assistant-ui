@@ -114,7 +114,7 @@ export default {
 
   name: 'FxAssistantMain',
 
-  data () {
+  data() {
 
     return {
       msg: 'FX Assistant',
